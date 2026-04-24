@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Years of Togetherness | Kamlesh & Dinesh</title>
+    <meta name="description" content="Kamlesh & Dinesh's 25th Anniversary Celebration - 26 April 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <h1 class="loader-text">K <span class="amp">&</span> D</h1>
+    </div>
+
+    <!-- Audio Player Toggle -->
+    <button id="music-toggle" class="music-toggle" aria-label="Toggle Music">
+        <svg class="icon icon-music" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+        <svg class="icon icon-music-off hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="1" y1="1" x2="23" y2="23"></line>
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+    </button>
+    <div id="youtube-audio" style="display:none;"></div>
+
+    <!-- 1. Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg parallax" style="background-image: url('images/hero_bg.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h2 class="sub-headline tracking-in">Celebrating Kamlesh & Dinesh</h2>
+            <h1 class="headline char-anim">25 Years of Togetherness</h1>
+            <p class="date fade-in-delay">26 April 2026</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- 2. Love Story Timeline -->
+    <section class="story" id="story">
+        <div class="container">
+            <h2 class="section-title reveal from-bottom">Our Journey</h2>
+
+            <!-- Row 1 -->
+            <div class="timeline-container">
+                <div class="timeline-card reveal from-bottom">
+                    <div class="card-image mask-reveal">
+                        <img src="images/IMG_20191017_194620.JPG" alt="Holding hands">
+                    </div>
+                    <div class="card-content">
+                        <span class="year">17 October, 2019</span>
+                        <h3 class="card-title">A little piece of forever</h3>
+                        <p class="card-desc">In the smallest moments</p>
+                    </div>
+                </div>
+
+                <div class="timeline-card reveal from-bottom">
+                    <div class="card-image mask-reveal">
+                        <img src="images/IMG_1382.jpg" alt="First home">
+                    </div>
+                    <div class="card-content">
+                        <span class="year">4 December, 2025</span>
+                        <h3 class="card-title">Building our life together</h3>
+                        <p class="card-desc">Building more than just walls—building memories.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-card reveal from-bottom">
+                    <div class="card-image mask-reveal">
+                        <img src="images/20230426095729_IMG_3706.JPG" alt="Through the years">
+                    </div>
+                    <div class="card-content">
+                        <span class="year">26 April, 2023</span>
+                        <h3 class="card-title">Still choosing each other</h3>
+                        <p class="card-desc">Through every high and low, together.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="timeline-container timeline-container--row2">
+                <div class="timeline-card reveal from-bottom">
+                    <div class="card-image mask-reveal">
+                        <img src="images/Snapchat-204664482.jpg" alt="Growing family">
+                    </div>
+                    <div class="card-content">
+                        <span class="year">25 March, 2024</span>
+                        <h3 class="card-title">A family in full bloom</h3>
+                        <p class="card-desc">Love multiplied, not divided.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-card reveal from-bottom">
+                    <div class="card-image mask-reveal">
+                        <img src="images/IMG_8425.jpg" alt="Adventures together">
+                    </div>
+                    <div class="card-content">
+                        <span class="year">7 April, 2023</span>
+                        <h3 class="card-title">Adventures, big and small</h3>
+                        <p class="card-desc">Every road was better, side by side.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-card reveal from-bottom">
+                    <div class="card-image mask-reveal">
+                        <img src="images/20220613193756_IMG_0830.JPG" alt="Strength together">
+                    </div>
+                    <div class="card-content">
+                        <span class="year">13 June, 2022</span>
+                        <h3 class="card-title">Stronger in every storm</h3>
+                        <p class="card-desc">Unshaken. Unbroken. Unwavering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4. Invitation Message -->
+    <section class="invitation" id="invitation">
+        <div class="invitation-content box-glow reveal from-bottom">
+            <p class="invite-text">
+                Together with love and gratitude,<br>
+                we invite you to celebrate<br>
+                25 beautiful years of togetherness.
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. Event Details -->
+    <section class="event" id="event">
+        <div class="container">
+            <div class="cards-wrapper">
+                <div class="event-card glass reveal from-bottom">
+                    <div class="card-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Venue</h3>
+                    <p class="venue-details">
+                        <strong style="font-size: 1.15rem; font-weight: 600; color: var(--color-accent);">Party in
+                            Basement</strong><br>
+                        <span
+                            style="font-size: 0.9rem; line-height: 1.4; display: inline-block; margin-top: 0.3rem; opacity: 0.85;">Hotel
+                            Govind Place<br>Defence colony, Hisar, Haryana, 125001</span>
+                    </p>
+                    <a href="https://maps.app.goo.gl/DVKVvCs5CMXW3zy29" target="_blank" rel="noopener noreferrer"
+                        class="btn-map">Open in Maps</a>
+                </div>
+                <div class="event-card glass reveal from-bottom">
+                    <div class="card-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Time</h3>
+                    <p>7:00 PM Onwards<br>Join us for cocktails & dinner</p>
+                </div>
+                <div class="event-card glass reveal from-bottom">
+                    <div class="card-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3>Date</h3>
+                    <p>Sunday<br>26 April 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Countdown Timer -->
+    <section class="timer-section" id="timer">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title reveal from-bottom">The Countdown Begins</h2>
+            <div class="countdown-wrapper reveal from-bottom">
+                <div class="time-box">
+                    <span id="days" class="time-val">00</span>
+                    <span class="time-label">Day</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours" class="time-val">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes" class="time-val">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds" class="time-val">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Final Section -->
+    <footer class="outro" id="outro">
+        <div class="outro-content">
+            <h2 class="outro-title reveal from-bottom">Still in love. Still growing. Still us.</h2>
+            <p class="signatures reveal from-bottom">Kamlesh <span class="amp">&</span> Dinesh</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
